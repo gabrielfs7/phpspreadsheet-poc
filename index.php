@@ -29,7 +29,7 @@ foreach ($spreadsheet->getWorksheetIterator() as $worksheet) {
 
             echo(
                 'CELL - text: ' . var_export($cell->getFormattedValue(), true) . PHP_EOL .
-                'CELL - Fill color: ' . var_export($cell->getStyle()->getFill()->getEndColor()->getRGB(), true) . PHP_EOL .
+                'CELL - Fill color: ' . var_export($cell->getStyle()->getFill()->getStartColor()->getRGB(), true) . PHP_EOL .
                 'Font - Bold: ' . var_export($cell->getStyle()->getFont()->getBold(), true) . PHP_EOL .
                 'Font - Italic: ' . var_export($cell->getStyle()->getFont()->getItalic(), true) . PHP_EOL .
                 'Font - Size: ' . var_export($cell->getStyle()->getFont()->getSize(), true) . PHP_EOL .
